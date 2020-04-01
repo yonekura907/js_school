@@ -1,0 +1,91 @@
+body {
+    background-color: #F8F8F8;
+}
+
+
+.container {
+  width: 800px;
+  margin: 24px auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.container ul.photo-list{
+  margin: 48px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container ul.photo-list li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.container ul.photo-list li img {
+  list-style: none;
+  width: 220px;
+  height: auto;
+}
+
+
+/* modal */
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.98);
+    /* 一旦非表示にしておく */
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.modal.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container img {
+    width: 600px;
+    height: auto;
+}
+
+.nav-left{
+  position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: -340px;
+}
+.nav-right{
+  position: fixed;
+    right: 50%;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-right: -344px;
+}
+
+.close {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
